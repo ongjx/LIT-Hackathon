@@ -108,7 +108,7 @@ def start(bot, update):
         "Hello! Welcome to LAWL BOT!\n\nTo search for lawyers from a category: \n/getcategory <category name>\n\nTo get a specific lawyer's info: \n/getinfo <lawyer's name>\n\nThe categories available for search are:\nAbuse\nAccidents\nClaims\nDivorce\nTort\n"
         )
 
-updater = Updater('739214507:AAFDrPsC2dkRSnC8MiWJeZ8cfdp2tkNChTc')
+updater = Updater('YOUR_TELEGRAM_BOT_API')
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
 updater.dispatcher.add_handler(CommandHandler('category', getLawyersInCategory))
